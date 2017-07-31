@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
-  socket: /tmp/mysql.sock
+  password: Vagrant_1993
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
@@ -30,7 +30,7 @@ test:
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
-# ever seen by anyone, they now have access to your database.
+# ever seen by anyone, they no have access to your database.
 #
 # Instead, provide the password as a unix environment variable when you boot
 # the app. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
