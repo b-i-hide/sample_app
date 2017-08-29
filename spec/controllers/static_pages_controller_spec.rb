@@ -33,7 +33,6 @@ RSpec.describe StaticPagesController, type: :controller do
     end
 
     it "renders the about template" do
-      get :about
       expect(subject).to render_template ('about')
     end
   end
@@ -46,7 +45,6 @@ RSpec.describe StaticPagesController, type: :controller do
     end
 
     it "renders the about template" do
-      get :contact
       expect(subject).to render_template ('contact')
     end
   end
