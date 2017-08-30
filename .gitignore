@@ -16,6 +16,7 @@
 vagrant/sample_app2
 vagrant/.vagrant
 .DS-store
+.env
 
 /node_modules
 /yarn-error.log
