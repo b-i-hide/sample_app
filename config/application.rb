@@ -17,7 +17,13 @@ module SampleApp2
     config.generators do |g|
       g.helper false
       g.assets false
-      g.test_framework false
+      g.test_framework :rspec,
+          fixture: true,
+          view_specs: false,
+          request_specs: false,
+          routing_specs: false,
+          helper_specs: false
+      g.factory_girl dir: 'spec/factories'
     end
   end
 end
