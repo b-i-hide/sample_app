@@ -33,6 +33,10 @@ gem 'bcrypt', '3.1.11'
 # jquery
 gem 'jquery-rails', '~> 4.2'
 
+# slim
+gem 'slim-rails'
+gem 'html2slim'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
