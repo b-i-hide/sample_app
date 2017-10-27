@@ -16,7 +16,6 @@ RSpec.feature "UserLogins", type: :feature do
     expect(page).not_to have_selector '.alert'
   end
 
-  # TODO: テストがpasswordのバリデーションのせいで通らないバグを修正
   scenario "login with valid info" do
     visit login_path
     fill_in 'Email', with: user.email
@@ -27,5 +26,6 @@ RSpec.feature "UserLogins", type: :feature do
     expect(page).not_to have_link nil, href: login_path
     expect(page).to have_link nil, href: logout_path
     expect(page).to have_link nil, href: user_path(user)
+    # TODO: logoutのテストをあとで追加
   end
 end
